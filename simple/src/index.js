@@ -6,15 +6,30 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import reportWebVitals from './reportWebVitals';
-import MainMenu from './MainMenu';
-import Jumbotron from './Jumbotron';
-import Footer from './Footer';
+import MainMenu from './Component/MainMenu';
+import Jumbotron from './Component/Jumbotron';
+import Footer from './Component/Footer';
+import Product from './Component/Product';
+import Products from './Component/Products'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <MainMenu />
     <Jumbotron />
+    <div className="container">
+      <div className="row">
+        {Products.map(prod => ( 
+          <div className="col">
+            <Product key={prod.name}
+                name={prod.name}
+                description ={prod.description}/>
+          </div>
+        ))
+        };
+      </div>
+    </div>
+    
     <Footer />
   </React.StrictMode>
 );
