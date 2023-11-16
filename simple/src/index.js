@@ -24,13 +24,14 @@ root.render(
             <Product key={prod.name}
                 name={prod.name}
                 description ={prod.description}/>
+
           </div>
         ))
         };
       </div>
     </div>
     
-    <Footer copyright="© 2021 Company, Inc" />
+    <Footer copyright="123456789" />
   </React.StrictMode>
 );
 
