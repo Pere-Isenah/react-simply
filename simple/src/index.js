@@ -30,7 +30,7 @@ root.render(
       </div>
     </div>
     
-    <Footer />
+    <Footer copyright="© 2021 Company, Inc" />
   </React.StrictMode>
 );
 

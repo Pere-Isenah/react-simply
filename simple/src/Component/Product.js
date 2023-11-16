@@ -2,8 +2,7 @@
 
  const Product = ({description,name})=> {
     
-   return 
-    (Math.random() > 0.5 
+   return (Math.random() > 0.5 
     ?(
     <React.Fragment>
       <div className="card">
@@ -19,8 +18,7 @@
           </a>
         </div>
       </div>
-    </React.Fragment>)
-    : (
+    </React.Fragment>): (
       <React.Fragment>
         <div className="card">
           <div className="card-body">
