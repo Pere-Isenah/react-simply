@@ -10,7 +10,8 @@ import MainMenu from './Component/MainMenu';
 import Jumbotron from './Component/Jumbotron';
 import Footer from './Component/Footer';
 import Product from './Component/Product';
-import Products from './Component/Products'
+import Products from './Component/Products';
+import {UserInput} from "./Component/Input";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,7 +31,10 @@ root.render(
         };
       </div>
     </div>
-    
+     <div>
+      <label>Username: </label>
+      <UserInput />
+    </div>
     <Footer copyright="123456789" />
   </React.StrictMode>
 );
